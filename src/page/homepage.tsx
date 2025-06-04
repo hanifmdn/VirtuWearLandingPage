@@ -8,7 +8,6 @@ import Testimonial from '../component/Testimonial.tsx';
 import Teams from '../component/Teams.tsx';
 import FAQ from '../component/FAQ.tsx';
 import CallToAction from '../component/CallToAction.tsx';
-import FashionHero from '../component/FashionHero.tsx';
 
 
 
