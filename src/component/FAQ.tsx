@@ -3,14 +3,16 @@ import { useEffect } from 'react';
 const FAQ = () => {
   useEffect(() => {
     const faqButtons = document.querySelectorAll('#faq button');
-    faqButtons.forEach(button => {
-      button.addEventListener('click', function () {
-        const answer = this.nextElementSibling;
-        const icon = this.querySelector('i');
+    const handleClick = function (this: HTMLButtonElement) {
+      const answer = this.nextElementSibling as HTMLElement;
+      const icon = this.querySelector('i') as HTMLElement;
 
-        if (answer) answer.classList.toggle('hidden');
-        if (icon) icon.classList.toggle('rotate-180');
-      });
+      if (answer) answer.classList.toggle('hidden');
+      if (icon) icon.classList.toggle('rotate-180');
+    };
+
+    faqButtons.forEach(button => {
+      button.addEventListener('click', handleClick);
     });
 
     return () => {
@@ -21,11 +23,11 @@ const FAQ = () => {
   }, []);
 
   return (
-    <div id="faq" className="py-20 bg-black overflow-x-hidden">
+    <div id="faq" className="py-20 bg-gray-900 overflow-x-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center fade-in">
           <h2 className="text-3xl md:text-4xl font-bold text-white playfair">
-            Frequently Asked <span className="text-white">Questions</span>
+            Frequently Asked <span className="text-blue-400">Questions</span>
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-300">
             Everything you need to know about VirtuWear. Can't find an answer? Contact us.
@@ -34,10 +36,10 @@ const FAQ = () => {
 
         <div className="mt-12 max-w-3xl mx-auto space-y-6">
           {faqList.map((item, idx) => (
-            <div key={idx} className={`bg-zinc-900 rounded-xl overflow-hidden fade-in delay-${idx * 100}`}>
+            <div key={idx} className={`bg-gray-800 rounded-xl overflow-hidden fade-in delay-${idx * 100}`}>
               <button className="w-full px-6 py-4 text-left focus:outline-none flex justify-between items-center">
                 <span className="text-lg font-medium text-white">{item.question}</span>
-                <i className="fas fa-chevron-down text-white transition-transform duration-300"></i>
+                <i className="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
               </button>
               <div className="px-6 pb-4 hidden">
                 <p className="text-gray-300">{item.answer}</p>
@@ -49,7 +51,7 @@ const FAQ = () => {
             <p className="text-gray-300">Still have questions?</p>
             <a
               href="#"
-              className="mt-4 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-black bg-white hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-300"
+              className="mt-4 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-300"
             >
               Contact Our Support Team
               <i className="fas fa-envelope ml-2"></i>

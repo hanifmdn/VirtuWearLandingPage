@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import Header from '../component/header.tsx';
 import Hero from '../component/hero';
 import FeatureShowcase from '../component/featureShowcase.tsx';
@@ -12,21 +12,9 @@ import CallToAction from '../component/CallToAction.tsx';
 
 
 const Homepage = () => {
-  const [headerBg, setHeaderBg] = useState('rgba(0, 0, 0, 0.3)');
   const observerRef = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
-    // Scroll effect for header
-    const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setHeaderBg('rgba(0, 0, 0, 0.9)');
-      } else {
-        setHeaderBg('rgba(0, 0, 0, 0.3)');
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
     // Intersection Observer for fade-in animations
     const observerOptions = {
       threshold: 0.1,
@@ -57,7 +45,6 @@ const Homepage = () => {
     }
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
       if (observerRef.current) {
         observerRef.current.disconnect();
         observerRef.current = null;
