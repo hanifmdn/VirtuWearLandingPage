@@ -76,20 +76,10 @@ const faqList = [
       'Absolutely. We process all images locally on your device and never store your photos on our servers. Our app uses end-to-end encryption and complies with all major privacy regulations including GDPR and CCPA.',
   },
   {
-    question: 'Which clothing brands work with VirtuWear?',
-    answer:
-      'We partner with over 200 major brands including Nordstrom, ASOS, Nike, and Levi\'s. You can also upload images of clothing from any brand - our AI will create a 3D model to visualize how it fits.',
-  },
-  {
     question: 'What\'s included in the free trial?',
     answer:
-      'The free trial gives you unlimited virtual try-ons for 7 days with access to all features. After the trial, you can choose between our monthly subscription or pay-per-use credits. No credit card is required to start the trial.',
-  },
-  {
-    question: 'Can I use VirtuWear for plus-size clothing?',
-    answer:
-      'Yes! VirtuWear was specifically designed to be inclusive of all body types. Our technology accurately simulates how clothes fit and drape on plus-size bodies, helping you find styles that work for your shape.',
-  },
+      'The free trial gives you virtual try-ons with access to all features. After the trial, you can choose pay-per-use credits. No credit card is required to start the trial.',
+  }
 ];
 
 export default FAQ;

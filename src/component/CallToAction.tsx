@@ -1,7 +1,7 @@
 const CallToAction = () => {
   
   return (
-    <div id="download" className="py-20 px-6">
+    <div className="py-20 px-6">
         <div className="container mx-auto text-center">
           <div className="glass bento-card rounded-3xl p-12 md:p-20 max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-6xl font-bold mb-6">Ready to Transform Your Style?</h2>
@@ -18,7 +18,7 @@ const CallToAction = () => {
             </div>
             
             <div className="flex justify-center space-x-8 text-gray-500">
-              <span>Available on Android</span>
+              <span>Available on iOS & Android</span>
               <span>•</span>
               <span>Limited Beta Access</span>
             </div>

@@ -1,3 +1,5 @@
+import { FaCamera } from "react-icons/fa";
+
 const FeatureShowcase = () => {
   return (
     <div id="features" className="pt-32 px-6">
@@ -11,7 +13,7 @@ const FeatureShowcase = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* AI Body Mapping */}
           <div className="glass bento-card rounded-3xl p-10 flex flex-col items-center text-center h-full">
-            <div className="text-5xl mb-4">🤖</div>
+            <div className="text-5xl mb-4">!</div>
             <h3 className="text-2xl font-bold mb-3">AI Body Mapping</h3>
             <p className="text-gray-400">
               Advanced algorithms create precise body measurements for perfect fit prediction.
@@ -19,7 +21,7 @@ const FeatureShowcase = () => {
           </div>
           {/* Photorealistic Results */}
           <div className="glass bento-card rounded-3xl p-10 flex flex-col items-center text-center h-full">
-            <div className="text-5xl mb-4">✨</div>
+            <div className="text-5xl mb-4">!!</div>
             <h3 className="text-2xl font-bold mb-3">Photorealistic Results</h3>
             <p className="text-gray-400">
               Experience lifelike textures, lighting, and shadows in every virtual try-on.
@@ -27,10 +29,10 @@ const FeatureShowcase = () => {
           </div>
           {/* Privacy */}
           <div className="glass bento-card rounded-3xl p-10 flex flex-col items-center text-center h-full">
-            <div className="text-5xl mb-4">🔒</div>
+            <div className="text-5xl mb-4">!!!</div>
             <h3 className="text-2xl font-bold mb-3">100% Private & Secure</h3>
             <p className="text-gray-400">
-              Your data is always protected and never shared.
+              Your data is always protected with us.
             </p>
           </div>
         </div>

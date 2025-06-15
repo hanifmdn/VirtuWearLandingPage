@@ -12,8 +12,8 @@ const Testimonial = () => {
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-gray-600 rounded-full mr-4"></div>
                 <div>
-                  <div className="font-semibold">Sarah M.</div>
-                  <div className="text-gray-400 text-sm">Fashion Blogger</div>
+                  <div className="font-semibold">Nicholas T.</div>
+                  <div className="text-gray-400 text-sm">Fashion Enthusiast</div>
                 </div>
               </div>
               <p className="text-gray-300">"VirtuWear completely changed how I shop online. No more returns or disappointments!"</p>
