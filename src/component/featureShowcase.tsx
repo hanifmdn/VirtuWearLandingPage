@@ -40,9 +40,9 @@ const FeatureShowcase = () => {
           {/* Brand Database */}
           <div className="md:col-span-2 glass bento-card rounded-3xl p-6 transform hover:scale-105 transition-all duration-300">
             <div className="text-2xl mb-2 flex justify-center"><FaDatabase className="mx-auto" /></div>
-            <h3 className="text-xl font-semibold mb-2">Vast Brand Database</h3>
+            <h3 className="text-xl font-semibold mb-2">Save Your Money</h3>
             <p className="text-gray-400">
-              Access an extensive range of brands and products at your fingertips.
+              No more wasting money on ill-fitting clothes.
             </p>
           </div>
 
