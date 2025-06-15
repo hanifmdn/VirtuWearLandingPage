@@ -6,7 +6,7 @@ const HowItWorks = () => {
   
   return (
       <div id="how-it-works" className="py-20 px-6">
-        <div className="container mx-auto border border-gray-800 rounded-xl p-12 backdrop-blur-sm bg-black/30">
+        <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">How It Works</h2>
             <p className="text-xl text-gray-400">Three simple steps to your perfect outfit</p>
