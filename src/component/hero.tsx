@@ -1,4 +1,13 @@
 const Hero = () => {
+  const smoothScroll = (targetId: string) => {
+    const target = document.querySelector(targetId);
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
   return (
     <div className="h-screen flex justify-center items-center px-4 sm:px-6 w-full">
       <div className="container mx-auto py-10">
@@ -14,7 +23,9 @@ const Hero = () => {
                 Try any outfit instantly with AI-powered visualization. Never wonder "how would this look on me?" again.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-gray-200 transition-all transform hover:scale-105 pulse-slow">
+                <button 
+                onClick={() => smoothScroll('#download')}
+                className="bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-gray-200 transition-all transform hover:scale-105 pulse-slow">
                   Download VirtuWear Free
                 </button>
                 <button className="glass px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-white hover:bg-opacity-10 transition-all">

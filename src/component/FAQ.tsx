@@ -50,7 +50,9 @@ const FAQ = () => {
           <div className="mt-12 text-center fade-in delay-700">
             <p className="text-gray-300">Still have questions?</p>
             <a
-              href="#"
+              href="https://www.instagram.com/virtuwears/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
               className="mt-4 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-black bg-white hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-300"
             >
               Contact Our Support Team
