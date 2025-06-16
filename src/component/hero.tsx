@@ -4,14 +4,15 @@ const Hero = () => {
     if (target) {
       target.scrollIntoView({
         behavior: 'smooth',
-        block: 'start'
+        block: 'start',
       });
     }
   };
+
   return (
-    <div className="h-screen flex justify-center items-center px-4 sm:px-6 w-full">
-      <div className="container mx-auto py-10">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-y-8 md:gap-6">
+    <div className="min-h-screen flex items-center justify-center px-4 sm:px-6 w-full overflow-hidden">
+      <div className="container mx-auto py-6 sm:py-10">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-y-6 md:gap-6">
           {/* Main Hero Card */}
           <div className="md:col-span-8 md:row-span-4 glass bento-card rounded-3xl p-6 sm:p-8 md:p-12 hero-gradient relative overflow-hidden fade-in">
             <div className="relative z-10">
@@ -23,9 +24,10 @@ const Hero = () => {
                 Try any outfit instantly with AI-powered visualization. Never wonder "how would this look on me?" again.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button 
-                onClick={() => smoothScroll('#download')}
-                className="bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-gray-200 transition-all transform hover:scale-105 pulse-slow">
+                <button
+                  onClick={() => smoothScroll('#download')}
+                  className="bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-gray-200 transition-all transform hover:scale-105 pulse-slow"
+                >
                   Download VirtuWear Free
                 </button>
                 <button className="glass px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-white hover:bg-opacity-10 transition-all">

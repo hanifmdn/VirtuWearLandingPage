@@ -17,7 +17,7 @@ const CallToAction = () => {
             </div>
             
             <div className="flex justify-center space-x-8 text-gray-500">
-              <span>Available on iOS & Android</span>
+              <span>Available on Android</span>
               <span>•</span>
               <span>Limited Beta Access</span>
             </div>

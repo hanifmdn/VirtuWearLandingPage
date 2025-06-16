@@ -6,7 +6,7 @@ import { FaLock } from "react-icons/fa";
 
 const FeatureShowcase = () => {
   return (
-    <div id="features" className="py-40 px-6">
+    <div id="features" className="px-6">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Revolutionary Features</h2>
@@ -49,9 +49,9 @@ const FeatureShowcase = () => {
           {/* Speed */}
           <div className="md:col-span-2 glass bento-card rounded-3xl p-6 transform hover:scale-105 transition-all duration-300">
             <div className="text-2xl mb-2 flex justify-center"><FaBolt className="mx-auto" /></div>
-            <h3 className="text-xl font-semibold mb-2">Blazing Fast</h3>
+            <h3 className="text-xl font-semibold mb-2">Fast</h3>
             <p className="text-gray-400">
-              Enjoy instant loading times and seamless browsing.
+              Enjoy instant loading times.
             </p>
           </div>
 
