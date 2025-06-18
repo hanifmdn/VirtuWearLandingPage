@@ -17,7 +17,7 @@ const Teams = () => {
                     </div>
                     <div>
                         <div className="text-xl mb-3">Chief Executive Officer</div>
-                        <div className="font-semibold mb-2 md:text-2xl">Hanif Ahmad Naufal</div>
+                        <div className="font-semibold mb-2 md:text-2xl">Hanif A. Naufal</div>
                         <div className="text-sm text-gray-400">Full Stack Engineer + AI Engineer + Social Media Specialist</div>
                     </div>
                     <div>
